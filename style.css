@@ -1,0 +1,817 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --very-light-red: hsl(13, 100%, 72%);
+    --very-light-red-cover: hsl(355, 100%, 74%);
+    --light-red: hsl(353, 100%, 62%);
+    --light-red-text: hsl(356, 100%, 66%);
+    --text: hsl(0, 0%, 100%);
+    --very-dark-blue: hsl(208, 49%, 24%);
+    --text-footer: hsl(240, 2%, 79%);
+    --very-dark-gray-blue: hsl(237, 17%, 21%);
+    --very-dark-desatured-blue: hsl(237, 23%, 32%);
+    --very-dark-black-blue: hsl(240, 10%, 16%);
+    --very-dark-grayish-blue: hsl(207, 13%, 34%);
+    --grayish-blue: hsl(240, 2%, 79%);
+
+    font-family: 'Overpass', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background: #fafafa;
+}
+
+/* header */
+
+header {
+    width: 100vw;
+    height: 90vh;
+
+    background: linear-gradient(to top, var(--light-red), var(--very-light-red));
+
+    border-radius: 0 0 0 10rem;
+
+}
+
+
+header .header-background-img {
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 0 0 0 10rem;
+
+    background-image: url(./images/bg-pattern-intro.svg);
+    
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-position-x: -300px;
+    background-position-y: -230px;
+}
+
+.header-nav {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 6rem 5rem 4rem 5rem;
+}
+
+.nav {
+    display: none;
+}
+
+.header-apresentation {
+
+    text-align: center;
+    padding: 6rem 4rem;
+
+
+    font-family: 'Overpass', sans-serif;
+    color: var(--text);
+}
+
+.header-apresentation h1 {
+    font-weight: 600;
+    font-size: 3.8rem;
+
+}
+
+.header-apresentation h2 {
+    font-weight: 300;
+    margin-top: 2rem;
+
+    font-size: 2rem;
+}
+
+.header-registration {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.header-registration #start-for-free,
+.header-registration #learn-more {
+    width: 38%;
+    height: 5.4rem;
+    border-radius: 4rem;
+
+    border: none;
+    outline: none;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.header-registration #start-for-free {
+    margin-left: 4rem;
+
+    background-color: var(--text);
+    color: var(--light-red-text);
+    transition: .2s;
+}
+
+.header-registration #start-for-free:hover {
+    background-color: var(--very-light-red-cover);
+    color: var(--text);
+}
+
+.header-registration #learn-more {
+    margin-right: 4rem;
+
+    color: var(--text);
+    background: none;
+    border: 2px solid var(--text);
+    transition: .2s;
+}
+
+.header-registration #learn-more:hover {
+    background-color: var(--text);
+    color: var(--very-light-red-cover);
+}
+
+/* Product */
+
+#product h1 {
+    text-align: center;
+
+    margin: 10rem 4rem 5rem 4rem;
+
+    font-size: 3.7rem;
+    color: var(--very-dark-blue);
+}
+
+#product .ilustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#product .ilustration img {
+    width: 100%;
+}
+
+
+#product .product-text {
+
+    padding: 4rem;
+}
+
+#product .product-text h2,
+#connect .connect-text h2 {
+    text-align: center;
+    font-size: 3.4rem;
+
+    color: var(--very-dark-blue);
+
+    line-height: 3.4rem;
+
+    margin: 4rem 0;
+}
+
+#product .product-text p,
+#connect .connect-text p {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--very-dark-grayish-blue);
+
+    padding: 0 2rem 0rem 2rem;
+
+    line-height: 3.2rem;
+}
+
+#product .product-text p:last-child {
+    padding-bottom: 10rem;
+}
+
+/* company */
+
+#company {
+    background: linear-gradient(to bottom, var(--very-dark-gray-blue), var(--very-dark-desatured-blue));
+
+    border-radius: 0 10rem 0 10rem;
+
+    margin-top: 20rem; 
+}
+
+#company .company-background-img {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 0 10rem 0 10rem;
+
+    background-image: url(./images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position-x: -120px;
+    background-position-y: -280px;
+}
+
+
+.company-phones {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-phones img{
+    margin-top: -25rem;
+    width: 100%;
+}
+
+.company-text {
+    padding: 2rem;
+
+    text-align: center;
+}
+
+.company-text h2 {
+    font-size: 4.4rem;
+    color: var(--text);
+
+    font-weight: 600;
+    padding: 0;
+}
+
+.company-text p {
+    padding: 4rem 4rem 8rem 4rem;
+    line-height: 3.4rem;
+
+    color: var(--text);
+    font-weight: 300;
+
+    font-size: 2rem;
+}
+
+/* connect */
+
+#connect .connect-img {
+    margin-top: 8rem;
+    width: 100%;
+}
+
+#connect .connect-img img {
+    width: 100%;
+}
+
+.connect-text {
+    padding: 2rem 2rem 10rem 2rem;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--very-dark-black-blue);
+
+    border-radius: 0 10rem 0 0;
+
+}
+
+.footer-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8rem 4rem 4rem 4rem;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 1.6rem;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-content ul:nth-child(2) {
+    margin-top: 4rem;
+}
+
+.footer-content ul li {
+    font-size: 1.4rem;
+    color: var(--grayish-blue);
+    padding: .6rem;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.footer-content ul li:hover {
+    text-decoration: underline;
+}
+
+.footer-content ul li:first-child {
+    font-weight: bold;
+    margin-bottom: 1.4rem;
+    cursor: initial;
+}
+
+.footer-content ul li:first-child:hover {
+    text-decoration: none;
+}
+
+/* menu-hamburguer */
+
+.nav.active {
+    display: block;
+    text-align: center;
+
+    width: 80%;
+    margin: auto;
+    height: 90%;
+
+    background-color: var(--text);
+
+    border-radius: .5rem;
+}
+
+.nav.active ul {
+    list-style: none;
+
+}
+
+.nav.active ul li {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1.8rem;
+
+}
+
+.nav.active ul li a.active img {
+    transform: rotate(180deg);
+}
+
+.nav.active ul li:first-child {
+    padding-top: 4rem;
+}
+
+.nav.active ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--very-dark-blue);
+}
+
+.nav.active ul li a img {
+    margin-left: 1rem;
+}
+
+.nav.active ul .details {
+    display: none;
+}
+
+.nav.active ul .details.active {
+    display: block;
+}
+
+.nav.active ul li:hover {
+    opacity: .7;
+}
+
+.nav.active ul .details {
+    background-color: var(--grayish-blue);
+
+    border-radius: .5rem;
+
+    width: 90%;
+    margin: 1rem auto;
+
+    padding: 1rem;
+
+}
+
+.nav.active ul .details li {
+    padding: .8rem;
+    font-size: 1.8rem;
+
+    color: var(--very-dark-blue);
+    opacity: .7;
+}
+
+.nav.active ul .details li:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.line {
+    width: 90%;
+    height: 1px;
+    margin: auto;
+
+    background-color: var(--grayish-blue);
+}
+
+.acess {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 2rem;
+}
+
+.acess button {
+    height: 5rem;
+    width: 50%;
+
+    border-radius: 4rem;
+
+    border: none;
+    outline: none;
+
+    margin-bottom: 1rem;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    font-family: 'Overpass', sans-serif;
+    cursor: pointer;
+}
+
+.acess #login {
+    background: none;
+
+    color: var(--very-dark-blue);
+}
+
+.acess #sign-up {
+    background: linear-gradient(to left, var(--light-red), var(--very-light-red));
+
+    color: var(--text);
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        background: linear-gradient(to left, var(--light-red), var(--very-light-red));
+    }
+
+    header .header-background-img {
+        background-size: 180%;
+        background-position-x: -400px;
+        background-position-y: -1200px;
+
+
+        display: grid;
+        grid-template-columns: .1fr 1fr 1fr;
+        grid-template-rows: .1fr 1fr 1fr;
+    }
+
+    .header-nav {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .header-apresentation {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    .header-apresentation h1 {
+        font-size: 6.4rem;
+    }
+
+    .header-apresentation h2 {
+        font-size: 2.2rem;
+    }
+
+    .header-registration {
+        grid-column: 1/4;
+        grid-row: 3/4;
+
+        align-self: flex-start;
+        justify-content: center;
+    }
+
+    .header-registration #start-for-free,
+    .header-registration #learn-more {
+        width: 16rem;
+        margin-right: 2rem;
+    }
+
+    .header-nav {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        padding: 6rem;
+
+        margin-left: 10rem;
+    }
+
+    .header-nav img:last-child {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        grid-column: 2/4;
+        grid-row: 1/2;
+
+        align-self: center;
+        height: 100%;
+        margin-right: 10rem;
+
+        padding: 6rem;
+
+
+        justify-content: space-around;
+    }
+
+    .nav ul {
+        display: flex;
+        list-style: none;
+        align-self: center;
+        justify-self: flex-start;
+
+        margin-left: -5rem;
+        position: relative;
+    }
+
+    .nav ul .link {
+        font-size: 1.6rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+    }
+
+    .nav ul .link a {
+        text-decoration: none;
+        color: var(--text);
+        margin: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav ul .link a img {
+        margin-left: 1rem;
+    }
+
+    .nav ul .link a.up img {
+        transform: rotate(180deg);
+    }
+
+    .nav ul .details {
+        display: none;
+        visibility: hidden;
+    }
+
+    .nav ul .details.up {
+        display: block;
+        visibility: visible;
+
+        position: absolute;
+
+        margin-left: .2rem;
+
+        padding: 2rem;
+
+        border-radius: .5rem;
+
+        background-color: var(--text);
+    }
+
+    .nav ul .details.up li {
+        font-weight: 500;
+        padding: .6rem 1.8rem .6rem 0; 
+        cursor: pointer;
+    }
+
+    .nav ul .details.up li:hover{
+        font-weight: bold;
+    }
+
+    .line {
+        display: none;
+    }
+    
+    .acess {
+        flex-direction: row;
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .acess button {
+        width: 16rem;
+        justify-self: end;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+    }
+
+    .acess #login {
+        color: var(--text);
+    }
+
+    .acess #sign-up {
+        background: var(--text);
+        color: var(--light-red-text);
+    }
+
+    #product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4fr;
+    }
+
+    #product h1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+
+        justify-self: center;
+        font-size: 4rem;
+    }
+
+    #product .ilustration {
+        grid-column: 2/3;
+        grid-row: 1/3;
+
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    #product .ilustration img {
+        position: absolute;
+        top: 8%;
+        right: -28%;
+        width: 100%;
+    }
+
+    #product .product-text {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0;
+        margin-left: 12rem;
+    }
+
+    #product .product-text h2 {
+        text-align: start;
+    }
+
+    #product .product-text p {
+        text-align: start;
+        margin-left: 0;
+        padding-left: 0;
+        font-size: 1.8rem;
+    }
+    
+    #company {
+        background: linear-gradient(to right, var(--very-dark-gray-blue), var(--very-dark-desatured-blue));
+    
+        border-radius: 0 10rem 0 10rem;
+        
+        
+        margin-top: 6rem;
+
+        height: 65vh;
+    }
+    
+    #company .company-background-img {
+        background-size: 70%;
+        background-position-x: -200px;
+        background-position-y: -500px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .company-phones {
+        position: relative;
+        
+    }
+
+    .company-phones img{
+        width: 90%;
+        position: absolute;
+        top: 16rem;
+        left: 10rem;
+    }  
+
+    .company-text {
+        text-align: start;
+
+        align-self: center;
+
+        margin-left: 6rem;
+        width: 80%;
+    }
+
+    .company-text h2 {
+        font-size: 4rem;
+    }
+    
+    
+    .company-text p {
+        padding-left: 0;
+        font-size: 1.8rem;
+    }
+
+    #connect {
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #connect .connect-img {
+        position: relative;
+    }
+
+    #connect .connect-img img {
+        position: absolute;
+        left: -29%;
+    }
+
+    #connect .connect-text {
+        align-self: center;
+        margin-top: 16rem;
+        margin-left: 6rem;
+    }
+
+    #connect .connect-text h2,
+    #connect .connect-text p {
+        text-align: left;
+    }
+
+    #connect .connect-text p {
+        font-size: 1.8rem;
+        padding-left: 0;
+
+        width: 82%;
+    }
+
+    footer {
+        margin-top: 22rem;
+    }
+
+    footer .footer-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 6rem;
+        padding-bottom: 8rem;
+
+    }
+
+    .footer-content img {
+        justify-self: center;
+    }
+
+    .footer-content ul li {
+        margin: 1rem;
+        text-align: left;
+    }
+
+    .footer-content ul li:first-child {
+        margin-bottom: 2.4rem;
+    }
+
+    .footer-content ul:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .footer-content ul:nth-child(4) {
+        justify-self: start;
+    }
+
+
+}
+
+
+
+
+
