@@ -10,7 +10,7 @@ function handleHamburguer(e) {
     e.target.classList.toggle('active')
 
     if(e.target.classList.contains('active'))  {
-        e.target.setAttribute('src', '/images/icon-close.svg')
+        e.target.setAttribute('src', './images/icon-close.svg')
 
         headerApresentation.style.display = 'none'
         headerRegistration.style.display = 'none'
@@ -19,7 +19,7 @@ function handleHamburguer(e) {
 
     }
     else {
-        e.target.setAttribute('src', '/images/icon-hamburger.svg')
+        e.target.setAttribute('src', './images/icon-hamburger.svg')
 
         headerApresentation.style.display = 'block'
         headerRegistration.style.display = 'block'
@@ -79,11 +79,11 @@ const arrows = document.querySelectorAll('.link a img')
 
 if(window.innerWidth >= 1024) {
     arrows.forEach(arrow => {
-        arrow.setAttribute('src', '/images/icon-arrow-light.svg')
+        arrow.setAttribute('src', './images/icon-arrow-light.svg')
     })
 
-    editorDesktop.setAttribute('src', 'images/illustration-editor-desktop.svg')
-    laptopDestop.setAttribute('src', 'images/illustration-laptop-desktop.svg')
+    editorDesktop.setAttribute('src', './images/illustration-editor-desktop.svg')
+    laptopDestop.setAttribute('src', './images/illustration-laptop-desktop.svg')
 
     function handleDetailDesktop(element, index) {
 
