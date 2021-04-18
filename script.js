@@ -1,6 +1,7 @@
 //menu hamburguer
 const hamburguerIcon = document.querySelector('#menu-hamburguer')
 const headerRegistration = document.querySelector('.header-registration')
+const headerApresentation = document.querySelector('.header-apresentation')
 const nav = document.querySelector('.nav')
 const linksNav = document.querySelectorAll('.link a')
 const details = document.querySelectorAll('.details')
